@@ -1,0 +1,130 @@
+h1{
+    color:rebeccapurple;
+    font-size: 20px;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*
+1, vi tri
+2. kich thuoc
+3. mau sac
+4. kieu dang
+*/
+/*
+1. tu ngoai vao trong
+2. tu tren xuong duoi
+3. tong quan den chi tiet
+*/
+#main {
+
+}
+
+#header {
+    height: 46px;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+#header .search-btn{
+    float: right;
+    line-height: 46px;
+    padding: 0 16px;
+}
+
+#header .search-btn:hover {
+    background-color: red;
+    cursor: pointer;
+}
+
+#header .search-icon {
+    color: #fff;
+}
+
+#nav{
+    display: inline-block;
+}
+
+#nav,
+.subnav {
+    list-style-type: none;
+}
+#nav > li {
+    display: inline-block;
+    position: relative;
+}
+#nav li a{
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 24px;
+    display: inline-block;
+}
+
+#nav >li >a{
+    text-transform: uppercase;
+    color: aliceblue;
+}
+
+#nav .subnav li:hover,
+#nav >li:hover >a {
+    color: black;
+    background-color: gray;
+}
+#nav .subnav {
+    display: none;
+    min-width: 160px;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    top: 100%;
+    left: 0;
+}
+
+#nav li:hover .subnav {
+    display: block;
+}
+
+#nav .subnav a{
+    color: black;
+    padding: 0 12px;
+    line-height: 38px;
+}
+/* #nav > li:hover > .subnav {
+    display: block;
+} */
+
+#slider {
+    position: relative;
+    margin-top: 46px;
+    padding-top: 50%;
+    background: url('/assets/src/img/chicago.jpg') top center / cover no-repeat;
+}
+#slider .text-content {
+    position: absolute;
+    color: #fff;
+    bottom: 47px;
+    width: 100%;
+    text-align: center;
+}
+#slider .text-content .text-heading {
+    font-weight: 500;
+    font-size: 24px;
+}
+#slider .text-content .text-description {
+    font-size: 15px;
+}
+#content {
+    height: 1000px;
+}
+
+#footer {
+
+}
